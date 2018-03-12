@@ -1,7 +1,17 @@
+.name{
+    //background-color: green;
+    text-align: left;
+}
+
+
 #footer-container{
+    width: 100vw;
     height: 33vh;
+    padding-top: 10px;
     background-color: #111111;
+    text-align: left;
   }
+
 
 #footer-container ul {
     list-style: none;
@@ -9,13 +19,20 @@
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 4px;;
-    line-height: 40px;
+    line-height: 45px;
 }
 
 #footer-container a{
-    color: #eeeeee;
+    color: #ffffff;
 }
 
-.footer-nav {
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    .name{
+        //text-align: center;
+    }
 
+    #footer-container{
+        //text-align: center;
+    }
 }
