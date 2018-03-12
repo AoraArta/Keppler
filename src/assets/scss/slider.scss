@@ -13,6 +13,7 @@
 .slider{
     //background-color: red;
     height: 500px;
+    position: relative;
 }
 
 /* Medium only */
@@ -31,14 +32,15 @@
 
 .slider img{
     display: none;
-    max-width: 100%;
+    max-width: 99%;
     padding-right: 10px;
+    position: absolute;
+    bottom: 0;
     
 }
 
 .slider img.active{
     display: inline-block;
-    bottom: 0;
 }
 
 .slider-info{
