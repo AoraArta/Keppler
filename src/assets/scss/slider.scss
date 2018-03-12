@@ -1,83 +1,89 @@
 
 .name{
-    background-color: green;
-    height: 10vh;
-}
-
-.name-and-info{
-    height: 32vh;
-    background-color: violet;
+    //background-color: green;
 }
 
 .slider-spacer-top{
     height: 5vh;
 }
 .slider-spacer-bottom{
-    height: 3vh;
+    height: 5vh;
 }
 
 .slider{
-    height: 45vh;
-    background-color: red;
-    opacity: .5;
+    //background-color: red;
+    height: 500px;
 }
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
     .slider{
-        height: 30vh;
+
     }
 }
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
     .slider{
-        height: 20vh;
+
     }
 }
 
 .slider img{
     display: none;
-    height: 100%;
-    padding-right: 10px; 
+    max-width: 100%;
+    padding-right: 10px;
+    
 }
 
 .slider img.active{
     display: inline-block;
-    opacity: 0.5;
+    bottom: 0;
 }
 
-.image-info-container p{
+.slider-info{
+    margin-top: 10px;
+    //background-color: #446623;
+}
+
+.slider-info p{
     display: none;
 }
 
-.image-info-container p.active-p{
+.slider-info p.active-p{
     display: block;
+}
+
+.slider-nav{
+    //background-color: #94d610;
+    margin-top: 10px;
+}
+
+.arrow-container{
+    float: left;
+    margin-top: 2px;
 }
 
 .prev, .next{
     cursor: pointer;
 }
 
-.arrow{
-    font-size: 20pt;
-}
-
 .prev{
     z-index: 100;
+    margin-right: 10px;
 }
 
 .next{
     z-index: 101;
+    margin-left: 10px;
+}
+
+.counter-container{
+    float: left;
 }
 
 #counter{
-    
-}
-
-.next-arrow{
-    font-family: verdana;
-    font-size: 20pt;
+    padding-top: -5px;
 }
 
 .image-description{
@@ -85,8 +91,3 @@
     font-size: 16px;
 }
 
-.image-info-container{
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: yellow;
-}

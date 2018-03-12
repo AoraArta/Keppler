@@ -25,51 +25,49 @@
   <script type="text/javascript" src="{{root}}assets/js/slick.js"></script>-->
 
 
-
-
-
+  <!--  SLIDER  -->
   <script type="text/javascript">
 
-    $(document).ready(function() {
-  var images = $('.slider > img');
+    $(document).ready(function () {
+      var images = $('.slider > img');
 
-  var index = images.index($('.active'));
-  $('#counter').text((index + 1) + ' / ' + images.length);
-
-  $('.next').on('click', function() {
-    var currentImg = $('.active');
-    var nextImg = currentImg.next();
-    var currentP = $('.active-p');
-    var nextP = currentP.next();
-
-    if (nextImg.length) {
-      currentImg.removeClass('active').css('z-index', -10);
-      nextImg.addClass('active').css('z-index', 10);
-      currentP.removeClass('active-p').css('z-index', -11);
-      nextP.addClass('active-p').css('z-index', 11);
-
-      var index = images.index(nextImg);
+      var index = images.index($('.active'));
       $('#counter').text((index + 1) + ' / ' + images.length);
-    }
-  });
 
-  $('.prev').on('click', function() {
-    var currentImg = $('.active');
-    var prevImg = currentImg.prev();
-    var currentP = $('.active-p');
-    var prevP = currentP.prev();
+      $('.next').on('click', function () {
+        var currentImg = $('.active');
+        var nextImg = currentImg.next();
+        var currentP = $('.active-p');
+        var nextP = currentP.next();
 
-    if (prevImg.length) {
-      currentImg.removeClass('active').css('z-index', -10);
-      prevImg.addClass('active').css('z-index', 10);
-      currentP.removeClass('active-p').css('z-index', -11);
-      prevP.addClass('active-p').css('z-index', 11);
+        if (nextImg.length) {
+          currentImg.removeClass('active').css('z-index', -10);
+          nextImg.addClass('active').css('z-index', 10);
+          currentP.removeClass('active-p').css('z-index', -11);
+          nextP.addClass('active-p').css('z-index', 11);
 
-      var index = images.index(prevImg);
-      $('#counter').text((index + 1) + ' / ' + images.length);
-    }
-  });
-});
+          var index = images.index(nextImg);
+          $('#counter').text((index + 1) + ' / ' + images.length);
+        }
+      });
+
+      $('.prev').on('click', function () {
+        var currentImg = $('.active');
+        var prevImg = currentImg.prev();
+        var currentP = $('.active-p');
+        var prevP = currentP.prev();
+
+        if (prevImg.length) {
+          currentImg.removeClass('active').css('z-index', -10);
+          prevImg.addClass('active').css('z-index', 10);
+          currentP.removeClass('active-p').css('z-index', -11);
+          prevP.addClass('active-p').css('z-index', 11);
+
+          var index = images.index(prevImg);
+          $('#counter').text((index + 1) + ' / ' + images.length);
+        }
+      });
+    });
 
 
 
