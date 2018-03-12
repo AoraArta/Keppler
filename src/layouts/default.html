@@ -14,29 +14,71 @@
 
 <body>
 
-    {{> body}} 
-
-
-    {{> footer}}
+  {{> body}} {{> footer}}
 
 
 
   <script src="{{root}}assets/js/app.js"></script>
 
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="{{root}}assets/js/slick.js"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <!--<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="{{root}}assets/js/slick.js"></script>-->
 
 
-  
+
 
 
   <script type="text/javascript">
-    $(document).ready(function () {
-      $('.slider').slick({
-        autoplay: true,
-      });
-    });
+
+    $(document).ready(function() {
+  var images = $('.slider > img');
+
+  var index = images.index($('.active'));
+  $('#counter').text((index + 1) + ' / ' + images.length);
+
+  $('.next').on('click', function() {
+    var currentImg = $('.active');
+    var nextImg = currentImg.next();
+    var currentP = $('.active-p');
+    var nextP = currentP.next();
+
+    if (nextImg.length) {
+      currentImg.removeClass('active').css('z-index', -10);
+      nextImg.addClass('active').css('z-index', 10);
+      currentP.removeClass('active-p').css('z-index', -11);
+      nextP.addClass('active-p').css('z-index', 11);
+
+      var index = images.index(nextImg);
+      $('#counter').text((index + 1) + ' / ' + images.length);
+    }
+  });
+
+  $('.prev').on('click', function() {
+    var currentImg = $('.active');
+    var prevImg = currentImg.prev();
+    var currentP = $('.active-p');
+    var prevP = currentP.prev();
+
+    if (prevImg.length) {
+      currentImg.removeClass('active').css('z-index', -10);
+      prevImg.addClass('active').css('z-index', 10);
+      currentP.removeClass('active-p').css('z-index', -11);
+      prevP.addClass('active-p').css('z-index', 11);
+
+      var index = images.index(prevImg);
+      $('#counter').text((index + 1) + ' / ' + images.length);
+    }
+  });
+});
+
+
+
+  // SLICK SLIDER
+  //  $(document).ready(function () {
+  //    $('.slider').slick({
+  //      autoplay: true,
+  //    });
+  //  });
   </script>
 
 

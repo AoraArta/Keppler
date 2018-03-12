@@ -1,17 +1,92 @@
-.slider{
-    background-color: red;
 
+.name{
+    background-color: green;
+    height: 10vh;
 }
 
-.image{
-    height: 51vh;
+.name-and-info{
+    height: 32vh;
+    background-color: violet;
 }
 
 .slider-spacer-top{
     height: 5vh;
 }
+.slider-spacer-bottom{
+    height: 3vh;
+}
 
-.name{
-    background-color: green;
-    height: 10vh;
+.slider{
+    height: 45vh;
+    background-color: red;
+    opacity: .5;
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .slider{
+        height: 30vh;
+    }
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    .slider{
+        height: 20vh;
+    }
+}
+
+.slider img{
+    display: none;
+    height: 100%;
+    padding-right: 10px; 
+}
+
+.slider img.active{
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.image-info-container p{
+    display: none;
+}
+
+.image-info-container p.active-p{
+    display: block;
+}
+
+.prev, .next{
+    cursor: pointer;
+}
+
+.arrow{
+    font-size: 20pt;
+}
+
+.prev{
+    z-index: 100;
+}
+
+.next{
+    z-index: 101;
+}
+
+#counter{
+    
+}
+
+.next-arrow{
+    font-family: verdana;
+    font-size: 20pt;
+}
+
+.image-description{
+    font-family: verdana;
+    font-size: 16px;
+}
+
+.image-info-container{
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: yellow;
 }

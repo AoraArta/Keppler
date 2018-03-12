@@ -2,11 +2,6 @@ import $ from 'jquery';
 import whatInput from 'what-input';
 
 window.$ = $;
-
-import $ from 'jquery';
-import whatInput from 'what-input';
-
-window.$ = $;
 window.jQuery = $;
 
 import Foundation from 'foundation-sites';
