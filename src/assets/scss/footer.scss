@@ -7,7 +7,7 @@
 #footer-container{
     width: 100vw;
     padding-top: 10px;
-    background-color: #111111;
+    background-color: $black;
     text-align: left;
   }
 
@@ -15,10 +15,12 @@
 #footer-container ul {
     list-style: none;
     margin: 0;
-    text-transform: uppercase;
-    font-size: 15px;
+    
+    font-size: 12px;
+    font-family: 'FuturaBTWXX-Bold', helvetica, sans-serif;
     letter-spacing: 4px;;
-    line-height: 45px;
+    line-height: 35px;
+    text-transform: uppercase;
 }
 
 #footer-container a{
@@ -38,5 +40,5 @@
 
 .footer-spacer-bottom{
     height: 4vh;
-    background-color: #111111;
+    background-color: $black;
 }

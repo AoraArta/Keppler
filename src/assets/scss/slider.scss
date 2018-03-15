@@ -6,6 +6,10 @@
     height: 5vh;
 }
 
+#main-content{
+    background-color: $white;
+}
+
 .slider{
     //background-color: red;
     height: 500px;
@@ -42,7 +46,7 @@
 
 .arrow-container{
     float: left;
-    margin-top: 2px;
+    margin-top: 3px;
 }
 
 .prev, .next{
@@ -64,6 +68,8 @@
 }
 
 #counter{
+    font-family: verdana;
+    font-size: 12px;
     padding-top: -5px;
 }
 
@@ -85,8 +91,13 @@
     display: block;
 }
 
+.image-title{
+    font-family: verdana;
+    font-size: 12px;
+}
+
 .image-description{
     font-family: verdana;
-    font-size: 16px;
+    font-size: 12px;
 }
 
