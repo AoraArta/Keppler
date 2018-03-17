@@ -25,56 +25,39 @@
   <script type="text/javascript">
 
     $(document).ready(function () {
-      var images = $('.slides-container > img');
+      var images = $('.content-wrapper > .content-container');
 
       var index = images.index($('.active'));
-      $('#counter').text((index + 1) + ' / ' + images.length);
+      $('.counter').text((index + 1) + ' / ' + images.length);
 
       $('.next').on('click', function () {
         var currentImg = $('.active');
         var nextImg = currentImg.next();
-        var currentP = $('.active-p');
-        var nextP = currentP.next();
 
         if (nextImg.length) {
           currentImg.removeClass('active').css('z-index', -10);
           nextImg.addClass('active').css('z-index', 10);
-          currentP.removeClass('active-p').css('z-index', -11);
-          nextP.addClass('active-p').css('z-index', 11);
-
 
 
           var index = images.index(nextImg);
-          $('#counter').text((index + 1) + ' / ' + images.length);
+          $('.counter').text((index + 1) + ' / ' + images.length);
         }
       });
 
       $('.prev').on('click', function () {
         var currentImg = $('.active');
         var prevImg = currentImg.prev();
-        var currentP = $('.active-p');
-        var prevP = currentP.prev();
 
         if (prevImg.length) {
           currentImg.removeClass('active').css('z-index', -10);
           prevImg.addClass('active').css('z-index', 10);
-          currentP.removeClass('active-p').css('z-index', -11);
-          prevP.addClass('active-p').css('z-index', 11);
 
           var index = images.index(prevImg);
-          $('#counter').text((index + 1) + ' / ' + images.length);
+          $('.counter').text((index + 1) + ' / ' + images.length);
         }
       });
     });
 
-
-
-  // SLICK SLIDER
-  //  $(document).ready(function () {
-  //    $('.slider').slick({
-  //      autoplay: true,
-  //    });
-  //  });
   </script>
 
 

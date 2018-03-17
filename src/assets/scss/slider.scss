@@ -10,39 +10,73 @@
     background-color: $white;
 }
 
-.slider{
-    //background-color: red;
-    height: 500px;
+/*  SLIDER  */
+
+.content-body{
+    //background-color: pink;
+}
+
+.content-wrapper{
+    //background-color: yellow;
+}
+
+.content-container{
+    //background-color: green;
+    height: 600px;
+    display: none;
+}
+
+.content-container.active{
+    display: block;
+}
+
+.slides-container{
+    //background-color: blue;
+    max-width: 70%;
+    height: 100%;
+    float: left;
     position: relative;
 }
 
-.slider img{
-    display: none;
-    max-width: 99%;
-    max-height: 100%;
+.slides{
+    width: 100%;
+    height: 600px;
+    vertical-align: bottom;
+    display: table-cell;
+}
+
+
+.infos-container{
+    //background-color: turquoise;
+    width: 30%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.infos{
+    padding-left: 20px;
     position: absolute;
     bottom: 0;
 }
 
-.slider img.active{
-    display: inline-block;
+.slider-navigation{
+    float: left;
 }
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
 
+.counter-container{
+    float: left;
 }
-/* Small only */
-@media screen and (max-width: 39.9375em) {
-    .slider img.active{
-        margin: 0 auto;
-    }
+
+.counter{
+    font-family: verdana;
+    font-size: 12px;
+    padding-top: -5px;
 }
+
+
 
 /*   ARROWS AND COUNTER   */
-.slider-nav{
-    //background-color: #94d610;
-    margin-top: 10px;
-}
 
 .arrow-container{
     float: left;
@@ -63,34 +97,10 @@
     margin-left: 10px;
 }
 
-.counter-container{
-    float: left;
-}
 
-#counter{
-    font-family: verdana;
-    font-size: 12px;
-    padding-top: -5px;
-}
 
-/* Small only */
-@media screen and (max-width: 39.9375em) {
-
-}
 
 /*   INFO TEXT   */
-.slider-info{
-    margin-top: 10px;
-}
-
-.slider-info p{
-    display: none;
-}
-
-.slider-info p.active-p{
-    display: block;
-}
-
 .image-title{
     font-family: verdana;
     font-size: 12px;
@@ -101,3 +111,13 @@
     font-size: 12px;
 }
 
+
+
+
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+}
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+}
