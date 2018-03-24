@@ -125,7 +125,42 @@
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .slider-spacer-top{
+        height: 4vh;
+    }
+
+    .content-container{
+        height: 500px;
+    }
+
+    .slides{
+        height: 500px;
+    }
+
+    .slides img{
+        max-height: 500px;
+    }
+
 }
 /* Small only */
 @media screen and (max-width: 39.9375em) {
+    .slider-spacer-top{
+        height: 3vh;
+    }
+
+    .slider-spacer-bottom{
+        height: 3vh;
+    }
+
+    .content-container{
+        height: 300px;
+    }
+
+    .slides{
+        height: 300px;
+    }
+
+    .slides img{
+        max-height: 300px;
+    }
 }

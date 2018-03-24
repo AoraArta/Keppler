@@ -12,7 +12,6 @@
 }
 
 .big-left-container{
-    //background-color: blue;
     width: 80%;
     height: 100%;
     float: left;
@@ -78,4 +77,64 @@ a.text{
 
 a.text:hover{
     color: $dark-gray;
+}
+
+
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .slider-spacer-top{
+        height: 4vh;
+    }
+
+    .content-container-static{
+        height: 500px;
+    }
+
+    .left{
+        height: 500px;
+    }
+
+    .left img{
+        max-height: 500px;
+    }
+
+    .big-left-container{
+        width: 100%;
+    }
+
+    .small-right-container{
+        width: 0;
+    }
+
+}
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    .slider-spacer-top{
+        height: 3vh;
+    }
+
+    .slider-spacer-bottom{
+        height: 3vh;
+    }
+
+    .content-container-static{
+        height: 300px;
+    }
+
+    .left{
+        height: 300px;
+    }
+
+    .left img{
+        max-height: 300px;
+    }
+
+    .big-left-container{
+        width: 100%;
+    }
+
+    .small-right-container{
+        width: 0;
+    }
 }
