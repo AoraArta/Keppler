@@ -79,7 +79,10 @@ a.text:hover{
     color: $dark-gray;
 }
 
-
+.vita-scroll-text{
+    max-height: 70%;
+    overflow: auto;
+}
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
