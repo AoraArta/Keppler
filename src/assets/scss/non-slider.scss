@@ -97,6 +97,9 @@ a.text:hover{
 .aktuelles-headline h2{
     padding-top: 20px;
     user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 /* Medium only */
