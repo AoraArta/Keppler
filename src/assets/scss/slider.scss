@@ -26,6 +26,10 @@
     display: none;
 }
 
+.content-container.active.aktuelles {
+    height: 500px !important;
+}
+
 .content-container.active{
     display: block;
 }
@@ -39,6 +43,10 @@
     position: relative;
 }
 
+.aktuelles .slides-container{
+    width: 69%;
+}
+
 .slides{
     width: 100%;
     height: 600px;
@@ -46,8 +54,16 @@
     display: table-cell;
 }
 
+.aktuelles .slides{
+    height: 500px;
+}
+
 .slides img{
     max-height: 600px;
+}
+
+.aktuelles .slides img {
+    max-height: 500px;
 }
 
 
@@ -57,6 +73,12 @@
     height: 100%;
     float: left;
     position: relative;
+}
+
+.aktuelles .infos-container{
+    //background-color: red;
+    height: 100%;
+    width: 31%;
 }
 
 .infos{
@@ -78,6 +100,7 @@
     font-family: verdana;
     font-size: 12px;
     padding-top: -5px;
+    user-select: none;
 }
 
 

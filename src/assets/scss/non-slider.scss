@@ -18,6 +18,12 @@
     position: relative;
 }
 
+.big-left-container-aktuelles{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
 .left{
     width: 100%;
     height: 600px;
@@ -34,7 +40,7 @@
 }
 
 .small-right-container{
-    //background-color: turquoise;
+    //background-color: red;
     width: 20%;
     height: 100%;
     float: left;
@@ -82,6 +88,15 @@ a.text:hover{
 .vita-scroll-text{
     max-height: 70%;
     overflow: auto;
+}
+
+.aktuelles-headline{
+    height: 100px;
+}
+
+.aktuelles-headline h2{
+    padding-top: 20px;
+    user-select: none;
 }
 
 /* Medium only */
